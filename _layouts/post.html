@@ -47,6 +47,13 @@ layout: default
 		</table>
 		{%- endif -%}
 	</header>
+	{%- if page.text_indent -%}
+	<style>
+		.post-content {
+			text-indent: 1em;
+		}
+	</style>
+	{%- endif -%}
 
 	<div class="post-content e-content" itemprop="articleBody">
 		{{ content }}
