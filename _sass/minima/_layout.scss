@@ -271,3 +271,25 @@
 		}
 	}
 }
+
+.tag {
+	display: inline-block;
+	background-color: #ababab;
+	color: #fff;
+	border: 2px solid #777;
+	border-radius: 0.25em;
+	padding: 0.2em;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	margin-right: 0.5em;
+	font-size: 0.85em;
+}
+
+.small-tag {
+	@extend .tag;
+	font-size: 0.75em;
+	padding: 0.1em;
+	padding-left: 0.4em;
+	padding-right: 0.4em;
+	margin-right: 0.02em;
+}
