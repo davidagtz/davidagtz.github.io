@@ -16,11 +16,11 @@ In order to do that, I chose to use Electron because of my deep knowledge of Jav
 I have faced a lot of problems, and I will continue to try to implement more features, but here are some screenshots:
 
 <div style="text-indent:0">
-<img src="/portfolio/assets/charcoal-1.png"/>
+<img src="/assets/charcoal-1.png"/>
 <br/>
 <br/>
-<img src="/portfolio/assets/charcoal-2.png"/>
+<img src="/assets/charcoal-2.png"/>
 <br/>
 <br/>
-<img src="/portfolio/assets/charcoal-3.png"/>
+<img src="/assets/charcoal-3.png"/>
 </div>
