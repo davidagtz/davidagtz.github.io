@@ -2,11 +2,12 @@
 layout: post
 title: "Red-Black Trees"
 date: 2020-06-30 23:17:56 -0500
+preview: "/assets/REDBLACK.png"
 # categories: boids quadtree p5S
 gh_link: https://github.com/davidagtz/RedBlack
 gh_page: https://davidagtz.github.io/RedBlack
 text_indent: true
-tags: [data structures, red black trees, p5, algorithms]
+tags: [Data Structures, Red Black Trees, p5]
 ---
 
 <iframe src="https://davidagtz.github.io/RedBlack" style="width: 40em; height:30em; display: inline-block"></iframe><br/>

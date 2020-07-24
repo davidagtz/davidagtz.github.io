@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "Charcoal Graphing Calculator"
+title: "Charcoal"
 date: 2020-06-16 17:08:56 -0500
-tags: [electron, parse tree, react, redux, typescript]
+tags: [electron, parse tree, react, redux, TS]
+preview: "/assets/charcoal-2.png"
 # categories: boids quadtree p5S
 # gh_link: https://github.com/davidagtz/Boids
 # gh_page: https://davidagtz.github.io/Boids
