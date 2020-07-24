@@ -10,7 +10,10 @@ text_indent: true
 tags: [Data Structures, Red Black Trees, p5]
 ---
 
-<iframe src="https://davidagtz.github.io/RedBlack" style="width: 40em; height:30em; display: inline-block"></iframe><br/>
+<!-- <div class="project-frame"> -->
+<iframe class="project-frame" src="https://davidagtz.github.io/RedBlack"></iframe>
+<!-- </div> -->
+<br/>
 
 In my Data Structures class at UTD, we learned a lot about a variety of data structures. We implemented some of those structures, but one of those that we didn't implement intriguied me: Red Black Trees. I learned of the neat tricks it uses to self-balance, and not only that but of it's efficiency compared to an AVL tree that needs balancing on every insertion and deletion.
 
