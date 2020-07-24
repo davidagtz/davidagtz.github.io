@@ -24,13 +24,16 @@
                 background-color: #666
                 .small-tag
                     background-color: #333
+            .preview
+                filter: brightness(75%)
         &:active
             box-shadow: 0 0 .25em .25em rgba(0, 0, 0, 0.6)
+            .preview
+                filter: brightness(50%)
             .post-info
                 background-color: #444
                 .small-tag
                     background-color: #222
-            // filter: brightness(25%)
         >.preview
             flex-grow: 1
             flex-basis: 0
@@ -51,6 +54,12 @@
                 font-size: 1.5em
             .date
                 font-size: $small-font-size
+        &.post-horiz
+            flex-direction: row
+            flex-basis: 20em
+            height: 11.5em
+            >.preview
+                flex-basis: 15%
 
 .post-link
     display: block
