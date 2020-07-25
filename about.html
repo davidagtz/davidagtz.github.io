@@ -1,0 +1,54 @@
+---
+layout: page
+title: "About Me"
+permalink: /about/
+---
+
+<div id="about-info">
+    <div id="about-meta">
+        <div id="profile"></div>
+        <span class="post-meta">University of Texas at Dallas '23</span>
+        <span class="post-meta">Computer Science</span>
+        <a class="post-meta" href="mailto:david.a.gutierrez99@gmail.com">david.a.gutierrez99@gmail.com</a>
+        <a class="post-meta" href="tel:+18328633566">(832) 863-3566</a>
+    </div>
+    <div id="about-text">
+        <p>Hello! My name is David Gutierrez, and I am a software developer. I currently study at the University of Texas at Dallas studying Computer Science. I hope to graduate in 2023. I have experience coding in a whole load of frameworks and languages.</p>
+        <div class="drop-table">
+            <h3>Languages</h3>
+            <ul>
+                <li>JavaScript</li>
+                <li>C++</li>
+                <li>Java</li>
+                <li>Swift</li>
+            </ul>
+        </div>
+        <div class="drop-table">
+            <h3>Technologies</h3>
+            <ul>
+                <li>React + Redux</li>
+                <li>Electron</li>
+                <li>MongoDB</li>
+                <li>SwiftUI</li>
+                <li>LLVM</li>
+                <li>Express.js</li>
+                <li>Tensorflow</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        const tables = document.getElementsByClassName("drop-table")
+        for(let i = 0; i < tables.length; i++) {
+            tables[i].onclick = ()=>{
+                const list = tables[i].className;
+                const index = list.indexOf("clicked");
+                if(index != -1) {
+                    tables[i].className = list.substring(0, index) + list.substring(index + "clicked".length + 1)
+                }
+                else {
+                    tables[i].className += " clicked"
+                }
+            }
+        }
+    </script>
+</div>

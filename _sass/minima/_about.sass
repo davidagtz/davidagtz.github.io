@@ -25,3 +25,49 @@ $shadow: .5em
 
 #about-text
     flex: 1
+
+@keyframes turn-activate
+    100%
+        transform: rotate(90deg)
+@keyframes turn-deactivate
+    0%
+        transform: rotate(90deg)
+    100%
+        transform: rotate(0deg)
+
+.drop-table
+    box-sizing: border-box
+    margin-bottom: 1em
+    overflow-y: hidden
+    height: 3.2em
+    h3
+        color: #fff
+        background-color: #777
+        font-size: 1.6em
+        padding: .5em
+        line-height: 1em
+        margin: 0
+        user-select: none
+        &:hover
+            background-color: #444
+        &::before
+            content: " "
+            background-image: url("/assets/arrow.svg")
+            background-size: contain
+            width: .5em * 18 / 30
+            height: .5em
+            display: inline-block
+            margin-right: .25em
+            animation-name: turn-deactivate
+            animation-duration: .5s
+            animation-fill-mode: forwards
+            font-size: 1.25em
+    ul
+        padding: .5em
+        list-style-type: none
+        margin: 0
+    &.clicked
+        height: auto
+        h3::before
+            animation-name: turn-activate
+            animation-duration: .5s
