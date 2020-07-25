@@ -11,7 +11,14 @@ layout: default
         <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
         <ul class="post-list">
             {%- for post in site.posts -%}
-                <li class="post-item" onclick="window.location = '{{ post.url | relative_url }}'">
+                {%- capture classes -%}
+                    post-item
+                    {%- if site.horizontal_cards -%}
+                        {{" "}}
+                        post-horiz
+                    {%- endif -%}
+                {%- endcapture -%}
+                <li class="{{classes}}" onclick="window.location = '{{ post.url | relative_url }}'">
                     {%- if post.preview -%}
                         <div class="preview" style="background-image: url('{{ post.preview }}');"></div>
                     {%- endif -%}
