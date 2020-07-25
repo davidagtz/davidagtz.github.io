@@ -8,6 +8,7 @@ gh_link: https://github.com/davidagtz/RedBlack
 gh_page: https://davidagtz.github.io/RedBlack
 text_indent: true
 tags: [Data Structures, Red Black Trees, p5]
+summary: "A red-black tree visualizer built on JavaScript and p5. This shows how theses trees operate."
 ---
 
 <!-- <div class="project-frame"> -->

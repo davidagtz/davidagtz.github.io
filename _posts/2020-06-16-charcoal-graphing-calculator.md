@@ -8,6 +8,7 @@ preview: "/assets/charcoal-2.png"
 # gh_link: https://github.com/davidagtz/Boids
 # gh_page: https://davidagtz.github.io/Boids
 text_indent: true
+summary: "A custom build graphing calculator based off of Electron, React, and Redux. This app is completely functional for 5 operations"
 ---
 
 Being inspired from services like Desmos and Wolfram Alpha one day, I decided to make my own graphing calculator. This one was going to be slightly different than those other services in that I was going to make it a desktop application instead of a website.
