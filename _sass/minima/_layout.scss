@@ -37,6 +37,10 @@
 	margin-bottom: 0;
 	float: left;
 
+	&:active {
+		filter: brightness(50%);
+	}
+
 	&,
 	&:visited {
 		color: $grey-color-dark;
