@@ -44,18 +44,45 @@ permalink: /about/
         </div>
     </div>
     <script>
+        function addClass(el, class_) {
+            el.className += " " + class_
+        }
+
+        function removeClass(el, class_, i) {
+            const index = i ?? el.className.indexOf(class_)
+            el.className = el.className.substring(0, index) + 
+                            el.className.substring(index + "clicked".length + 1)
+        }
+        
+        function toggleClass(el, class_) {
+            const index = el.className.indexOf(class_)
+            if(index != -1)
+                removeClass(el, class_, index)
+            else
+                addClass(el, class_)
+        }
+
         const tables = document.getElementsByClassName("drop-table")
         for(let i = 0; i < tables.length; i++) {
             tables[i].onclick = ()=>{
-                const list = tables[i].className;
-                const index = list.indexOf("clicked");
-                if(index != -1) {
-                    tables[i].className = list.substring(0, index) + list.substring(index + "clicked".length + 1)
+                if(tables[i].className.indexOf("clicked") != -1) {
+                    if(tables[i].className.indexOf("animate") == -1) {
+                        addClass(tables[i], "animate")
+                    }
                 }
-                else {
-                    tables[i].className += " clicked"
-                }
+                else
+                        addClass(tables[i].firstChild, "animate")
+                toggleClass(tables[i], "clicked")
             }
+        }
+
+        window.onload = function() {
+            // setTimeout(() => {
+                // const tables = document.getElementsByClassName("drop-table")
+                // for(let i = 0; i < tables.length; i++) {
+                //     addClass(tables[i], "animate")
+                // }
+            // })
         }
     </script>
 </div>
