@@ -25,6 +25,8 @@ $shadow: .5em
 
 #about-text
     flex: 1
+    p
+        text-indent: 1em
 
 @keyframes turn-activate
     100%
@@ -37,13 +39,13 @@ $shadow: .5em
 
 .drop-table
     box-sizing: border-box
-    margin-bottom: 1em
+    margin-bottom: .75em
     overflow-y: hidden
-    height: 3.2em
+    height: 2.6em
     h3
         color: #fff
         background-color: #777
-        font-size: 1.6em
+        font-size: 1.3em
         padding: .5em
         line-height: 1em
         margin: 0
@@ -59,15 +61,25 @@ $shadow: .5em
             display: inline-block
             margin-right: .25em
             animation-name: turn-deactivate
-            animation-duration: .5s
+            animation-duration: .25s
             animation-fill-mode: forwards
             font-size: 1.25em
     ul
         padding: .5em
         list-style-type: none
         margin: 0
+        li
+            height: 5em
+            display: inline-flex
+            flex-direction: column
+            align-items: center
+            width: 5em
+            img
+                display: block
+            span
+                color: #777
     &.clicked
         height: auto
         h3::before
             animation-name: turn-activate
-            animation-duration: .5s
+            animation-duration: .25s

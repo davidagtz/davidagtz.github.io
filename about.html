@@ -15,24 +15,31 @@ permalink: /about/
     <div id="about-text">
         <p>Hello! My name is David Gutierrez, and I am a software developer. I currently study at the University of Texas at Dallas studying Computer Science. I hope to graduate in 2023. I have experience coding in a whole load of frameworks and languages.</p>
         <div class="drop-table">
+            {%- assign langs = "JavaScript, C++, Python, Swift, Java" | split: ", " -%}
             <h3>Languages</h3>
             <ul>
-                <li>JavaScript</li>
-                <li>C++</li>
-                <li>Java</li>
-                <li>Swift</li>
+                {%- for lang in langs -%}
+                <li>
+                    <img src="/assets/about/langs/{{lang | downcase}}.png"/>
+                    <span>
+                        {{lang}}
+                    </span>
+                </li>
+                {%- endfor -%}
             </ul>
         </div>
         <div class="drop-table">
+            {%- assign techs = "React, Redux, Electron, MongoDB, SwiftUI, LLVM, Express.js, Tensorflow" | split: ", " -%}
             <h3>Technologies</h3>
             <ul>
-                <li>React + Redux</li>
-                <li>Electron</li>
-                <li>MongoDB</li>
-                <li>SwiftUI</li>
-                <li>LLVM</li>
-                <li>Express.js</li>
-                <li>Tensorflow</li>
+                {%- for tech in techs -%}
+                <li>
+                    <img src="/assets/about/techs/{{tech | downcase}}.png"/>
+                    <span>
+                        {{tech}}
+                    </span>
+                </li>
+                {%- endfor -%}
             </ul>
         </div>
     </div>
